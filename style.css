@@ -1,0 +1,283 @@
+body{
+    background-color: #000;
+    color: white;
+    height: 100vh;
+    overflow-y: hidden;
+    background-image: url(./assets/Wall\ paper\ Star\ wars.jpg);
+}
+header{
+    background-color: #000;
+    display: flex;
+    width: 100%;
+    height: 125px;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #ffff;
+    left: 0;
+}
+.logotype{
+    height: fit-content;
+}
+.header-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #000;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+    text-decoration: none;
+    
+}
+.header-button:hover{
+    background-color: #ffff;
+    color: #000;
+}
+audio {
+    margin-right : 50px;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    width: 150px;
+  }
+  audio::-webkit-media-controls-enclosure {
+    max-width: none
+  }
+  audio::-webkit-media-controls-panel {
+    background-color: transparent
+  }
+  audio::-webkit-media-controls-play-button {
+    color: #000;
+  }
+  audio::-webkit-media-controls-mute-button {
+    color: #000;
+  }
+  audio::-webkit-media-controls-current-time-display,
+  audio::-webkit-media-controls-time-remaining-display {
+    display: none;
+  }
+.sidebar{
+    margin-top: 126px;
+    height: 100%;
+    width: 160px; 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    background-color: #000; 
+    overflow-x: hidden;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px #ffff;
+}
+.menu-sidebar{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top:30px;
+    width: fit-content;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffff;
+}
+#mise-valeur{
+    text-transform: uppercase;
+    color: #88C0D0;
+}
+.menu-sidebar:hover{
+    border: solid 1px #ffff;
+    border-radius: 1px;
+}
+main{
+    height: 100%;
+    min-width: 9rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    margin-top: 1.5rem;
+    margin-right: 25px;
+}
+.infos{
+    background-image:url(./assets/ship.png);
+    background-size: cover;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: solid 2px #ffff;
+}
+.logo-sidebar{
+    width: 3.5rem;
+
+}
+.Logo-info{
+    width: 3.5rem;
+}
+.contenu{
+    display: flex;
+    flex-direction: column;
+    margin-left: 180px;
+    gap: 150px;
+}
+.titre-main{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 35px;
+    color:  #88c0d0;
+}
+.stats{
+    display: flex;
+    flex-direction: column;
+    background-image: url(./assets/Backgroundimagespace.png);
+    background-size: cover;
+    height: 350px;
+    border: solid 2px #ffff;
+
+}
+.detail-stat{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    vertical-align: middle;
+    height: 100%;   
+    
+}
+
+#gap-text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.detail-stat article{
+    display: flex;
+    align-items: center;
+}
+.detail-stat article i{
+    font-size: 3rem;
+    margin: 10px;
+}
+.button-mission{
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    margin-left:15px ;
+    margin-right: 15px;
+    border: solid 1px #ffff;
+}
+.button-mission:hover{
+    background-color: #fff;
+    color: #000;
+    border: solid 1px #000;
+}
+
+.Liste{
+    display: flex;
+}
+.table-container{
+    width: 40%;
+    border: solid 1px #ffff;
+    margin: 100px 180px;
+    height: 60%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+}
+.table-container h1 {
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #000;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 700;
+}
+.table-container li{
+    border: solid 1px #ffff;
+}
+.planet-info{
+    width: 400px;
+    border: solid 1px #ffff;
+    margin: 100px 180px;
+    height: 400px;
+    text-align: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+.planets {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#planet {
+    margin: 0;
+    max-height: 400px;
+    width: 100%;
+    overflow: auto;
+    }
+.table{
+    width: 100%;
+}
+.table-tr{
+    width: 100%;
+}
+.table-tr:hover{
+    background-color: rgb(136, 192, 208);
+    color: black;
+    cursor: pointer;
+}
+.planet-section{
+    border: 1px solid white;
+    margin: 20px;
+    padding: 20px;
+    height: 80%;
+    width: 30%;
+    background: transparent;
+    margin-left: 180px;
+}
+.planet-info-section{
+    border: 1px solid white;
+    margin: 20px;
+    padding: 20px;
+    height: 80%;
+    width: 30%;
+
+}
+.planetDetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.planetDetails h5{
+    display: flex;
+    align-items: center;
+}
+.planetDetails i{
+        font-size: 3rem;
+        margin: 10px;
+    }
+
+#planetName {
+    color: #88C0D0;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+

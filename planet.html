@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>May The Force Be With You</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="./assets/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<header>
+    <img class="logotype" src="./assets/logotype.png" alt="" />
+    <section class="">
+        <a class="header-button" href="index.html">Accueil</a>
+        <a class="header-button" href="https://robertsspaceindustries.com/flyfree" target="_blank">Prochaine mission</a>
+    </section>
+</header>
+<body>
+    <div class="sidebar">
+        <a class="menu-sidebar" href="planet.html">
+            <img class="logo-sidebar" src="./assets/globe-terrestre.png" alt="" /><span>planètes</span>
+        </a>
+        <div class="menu-sidebar">
+            <img class="logo-sidebar" src="./assets/space.png" alt="" /><span>véhicules</span>
+        </div>
+        <div class="menu-sidebar">
+            <img class="logo-sidebar" src="./assets/astronaute.png" alt="" /><span>personnes</span>
+        </div>
+    </div>
+    <div class="content">
+        <main class="planets">
+            <section class="planet-section">
+
+                <select id="populationFilter">
+                    <option value="1">Par population</option>
+                    <option value="2">0 à 100.000</option>
+                    <option value="3">100.000 à 100.000.000</option>
+                    <option value="4">+100.000.000</option>
+                </select>
+
+                <h2>Planètes</h2>
+                <div class="table-container" id="planet">
+                    <table class="table">
+                        <tr class="table-tr">
+                            <th>Nom</th>
+                            <th>Terrain</th>
+                        </tr>
+                    </table>
+                </div>
+
+            </section>
+
+            <section class="planet-info-section">
+                <p id="planetInfos">Selectionnez le contenu à afficher !</p>
+                <div id="planetRequest">
+                    <h3><span id="planetName"></span></h3>
+                    <p>Population : <span id="planetPopulation"></span></p>
+                    <div class="planetDetails">
+                        <div class="planetDetails__titles">
+                            <i class="fa-regular fa-circle" style="color: #88c0d0;"></i>
+                            <div>
+                                <h5>Diamètre</h5>
+                                <p id="planetDiameter"></p>
+                            </div>
+
+                        </div>
+                        <div class="planetDetails__titles">
+                            <i class="fa-solid fa-temperature-three-quarters" style="color: #88c0d0;"></i>
+                            <div>
+                                <h5>Climat</h5>
+                                <p id="planetClimate"></p>
+                            </div>
+
+                        </div>
+                        <div class="planetDetails__titles">
+                            <i class="fa-solid fa-magnet" style="color: #88c0d0;"></i>
+                            <div>
+                                <h5>Gravité</h5>
+                                <p id="planetGravity"></p>
+                            </div>
+
+                        </div>
+                        <div class="planetDetails__titles">
+                            <i class="fa-solid fa-tree" style="color: #88c0d0;"></i>
+                            <div>
+                                <h5>Terrain</h5>
+                                <p id="planetTerrain"></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="scriptPlanets.js"></script>
+</body>
+</html>
